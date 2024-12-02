@@ -1,0 +1,11 @@
+name: Deploy JAMS
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy_JAMS:
+      uses: development-uap/UAP-JAMS-DeploymentFramework/.github/workflows/deploy_JAMS.yml@main
+      with:
+        xmlFilesFolder: "JAMSFiles"
+        deployInProd: "false"
